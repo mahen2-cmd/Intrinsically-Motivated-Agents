@@ -47,17 +47,6 @@ class Position:
         return hash((self._x, self._y))
 
 
-# @dataclass(frozen=True)
-# class Position:
-#     x: int
-#     y: int
-
-
-# @dataclass
-# class Position:
-#     x: int
-#     y: int
-
 class All_Positions:
     def __init__(self, position_agent1: Position, position_agent2: Position, position_box: Position):
         self._position_agent1 = position_agent1
