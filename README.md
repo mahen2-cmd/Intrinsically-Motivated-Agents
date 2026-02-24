@@ -7,8 +7,8 @@ We study **intrinsically motivated reinforcement learning** in a grid-world envi
 ## Intrinsic Motivation
 
 The agents receive rewards for:
-- Exploring previously unknown areas of the environment  
-- Reducing uncertainty about their surroundings  
+- Exploring previously unknown areas of the environment
+- Reducing uncertainty about their surroundings
 
 As a result, their behavior emerges from **pure curiosity**, rather than explicit goals imposed by the environment designer.
 
@@ -16,9 +16,9 @@ As a result, their behavior emerges from **pure curiosity**, rather than explici
 
 ## Cooperation Mechanism
 
-The environment contains a **heavy box** placed at a fixed location.  
+The environment contains a **heavy box** placed at a fixed location.
 This box:
-- Cannot be moved by a single agent  
+- Cannot be moved by a single agent
 - Can only be pushed when **both agents act together**
 
 When the agents successfully push the box cooperatively, they receive an **additional intrinsic reward**, explicitly reinforcing cooperative behavior.
@@ -28,8 +28,8 @@ When the agents successfully push the box cooperatively, they receive an **addit
 ## Environment Progression
 
 If the agents manage to push the box to a designated corner of the grid:
-- A **portal** opens at another location in the environment  
-- The agents can enter the portal and transition to a **new environment**  
+- A **portal** opens at another location in the environment
+- The agents can enter the portal and transition to a **new environment**
 
 This new environment provides additional unexplored areas, further fueling intrinsic motivation.
 
@@ -38,9 +38,19 @@ This new environment provides additional unexplored areas, further fueling intri
 ## Emergent Behavior
 
 Despite the absence of external rewards or predefined objectives, we observe that:
-- With sufficient training iterations  
-- The agents learn to coordinate their actions  
-- They discover how to push the box cooperatively  
-- They successfully activate the portal and transition to the new environment  
+- With sufficient training iterations
+- The agents learn to coordinate their actions
+- They discover how to push the box cooperatively
+- They successfully activate the portal and transition to the new environment
 
 This demonstrates that **intrinsic motivation alone**, combined with minimal cooperative incentives, is sufficient for the emergence of complex, goal-directed, and cooperative behaviors.
+
+
+## How can you run it?
+
+Use pip install -r requirements.txt to install the relevant libraries.
+You will need to install jupyter notebook since the training is done on a jupyter notebook.
+Run all the cells in the jupyter notebook.
+The training is done for 40000 runs and it takes some time to complete.
+You will the logs of all positions the agents take in the all_positions variable.
+You can modify the index of the training run you want to see inside the code and visualize it by running the next few cells.
