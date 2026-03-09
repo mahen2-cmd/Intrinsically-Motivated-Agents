@@ -46,11 +46,13 @@ Despite the absence of external rewards or predefined objectives, we observe tha
 This demonstrates that **intrinsic motivation alone**, combined with minimal cooperative incentives, is sufficient for the emergence of complex, goal-directed, and cooperative behaviors.
 
 
+
 ## How can you run it?
 
+- Use Python 3.10 or higher
 - Use `pip install -r requirements.txt` to install the relevant libraries.
 - You will need to install jupyter notebook since the training is done on a jupyter notebook.
 - Run all the cells in the jupyter notebook - `training.ipynb`
-- The training is done for 40000 runs and it takes some time to complete.
+- The training is done for 120000 runs and it takes some time to complete.
 - You will the logs of all positions the agents take in the all_positions variable.
 - You can modify the index of the training run you want to see inside the code and visualize it by running the next few cells.

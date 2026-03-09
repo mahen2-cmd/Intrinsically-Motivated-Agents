@@ -262,7 +262,6 @@ class Game:
             if not self.positions_stack:
                 running = False
 
-            self.clock.tick(60)
             self.clock.tick(2)
         pygame.quit()
 

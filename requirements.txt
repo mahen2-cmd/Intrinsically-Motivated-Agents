@@ -1,3 +1,5 @@
 numpy==2.2.6
 pandas==2.3.2
 tqdm==4.67.1
+pygame==2.1.0
+imageio==2.37.0
